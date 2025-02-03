@@ -1,0 +1,69 @@
+<nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a class="navbar-item" href="index.php?vista=home">      
+        <img src="./img/logo2.png" width="72" height="28">     
+    </div>
+    <div class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item">       
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            Usuarios
+            </a>
+            <div class="navbar-dropdown">
+            <a class="navbar-item">Nuevo</a>
+            <a class="navbar-item">Lista</a> 
+            <a class="navbar-item">Buscar</a>           
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            Categorías
+            </a>
+            <div class="navbar-dropdown">
+            <a class="navbar-item">Nueva</a>
+            <a class="navbar-item">Lista</a> 
+            <a class="navbar-item">Buscar</a>           
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            Producto
+            </a>
+            <div class="navbar-dropdown">
+            <a class="navbar-item">Nuevo</a>
+            <a class="navbar-item">Lista</a> 
+            <a class="navbar-item">Por Categoría</a>
+            <a class="navbar-item">Buscar</a>           
+          </div>
+        </div>
+      </div>
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="buttons">
+            <a class="button is-primary is-rounded">
+              Mi Cuenta
+            </a>
+            <a class="button is-link is-rounded">
+              Salir
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  
+
+  <script>
+    // Código para activar el menú hamburguesa en dispositivos móviles
+    document.addEventListener('DOMContentLoaded', () => {
+      const burger = document.querySelector('.navbar-burger');
+      const menu = document.querySelector('.navbar-menu');
+      burger.addEventListener('click', () => {
+        burger.classList.toggle('is-active');
+        menu.classList.toggle('is-active');
+      });
+    });
+  </script>
+</body>
+</html>
